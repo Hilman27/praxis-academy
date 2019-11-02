@@ -1,0 +1,319 @@
+1) cd 
+C:\Users\Mocha>cd\
+
+C:\>E:
+
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>
+
+2) date 
+
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>date
+The current date is: Sat 11/02/2019
+Enter the new date: (mm-dd-yy)
+
+3) dir
+
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>dir /s *.txt
+ Volume in drive E has no label.
+ Volume Serial Number is 1B9D-D384
+
+ Directory of E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan
+
+11/02/2019  10:56 PM               777 cmdline.txt
+11/02/2019  11:01 PM                 5 testfile.txt
+               2 File(s)            782 bytes
+
+     Total Files Listed:
+               2 File(s)            782 bytes
+               0 Dir(s)  189,318,295,552 bytes free
+
+4) mkdir
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>mkdir test
+
+5) rmdir
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>rmdir test
+
+6)
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::5820:e038:5775:b9c6%4
+   IPv4 Address. . . . . . . . . . . : 192.168.0.102
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+7)
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>fc cmdline.txt testfile.txt
+Comparing files cmdline.txt and TESTFILE.TXT
+	***** cmdline.txt
+	1) cd
+	C:\Users\Mocha>cd\
+
+	C:\>E:
+
+	E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>
+
+	2) date
+
+	E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>date
+	The current date is: Sat 11/02/2019
+	Enter the new date: (mm-dd-yy)
+	.
+	.
+	.
+	***** TESTFILE.TXT
+	hhaha
+	*****
+
+8)Netstat
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:5939         activate:49672         ESTABLISHED
+  TCP    127.0.0.1:32232        activate:49754         ESTABLISHED
+  TCP    127.0.0.1:49672        activate:5939          ESTABLISHED
+  TCP    127.0.0.1:49706        activate:49707         ESTABLISHED
+  TCP    127.0.0.1:49707        activate:49706         ESTABLISHED
+  TCP    127.0.0.1:49754        activate:32232         ESTABLISHED
+  TCP    192.168.0.102:49685    152:https              ESTABLISHED
+  TCP    192.168.0.102:49715    fra02-002:http         ESTABLISHED
+  TCP    192.168.0.102:49873    sc-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.102:50073    TW-TPE-ANX-R005:5938   ESTABLISHED
+  TCP    192.168.0.102:50172    a104-93-198-63:https   CLOSE_WAIT
+  TCP    192.168.0.102:50407    lb-192-30-253-125-iad:https  ESTABLISHED
+  TCP    192.168.0.102:50717    lb-140-82-113-25-iad:https  ESTABLISHED
+  TCP    192.168.0.102:51251    223:https              TIME_WAIT
+  TCP    192.168.0.102:51300    unknown:https          TIME_WAIT
+  TCP    192.168.0.102:51301    unknown:https          TIME_WAIT
+  TCP    192.168.0.102:51302    unknown:https          TIME_WAIT
+  TCP    192.168.0.102:51303    unknown:https          TIME_WAIT
+  TCP    192.168.0.102:51304    unknown:https          TIME_WAIT
+  TCP    192.168.0.102:51305    unknown:https          TIME_WAIT
+
+9) ping
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>ping google.co.id
+
+Pinging google.co.id [216.239.38.120] with 32 bytes of data:
+Reply from 216.239.38.120: bytes=32 time=25ms TTL=52
+Reply from 216.239.38.120: bytes=32 time=25ms TTL=52
+Reply from 216.239.38.120: bytes=32 time=25ms TTL=52
+Reply from 216.239.38.120: bytes=32 time=25ms TTL=52
+
+Ping statistics for 216.239.38.120:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 25ms, Maximum = 25ms, Average = 25ms
+10)tracert
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>tracert google.co.id
+
+Tracing route to google.co.id [216.239.38.120]
+over a maximum of 30 hops:
+
+  1     2 ms     1 ms     1 ms  192.168.0.1
+  2     *        *        *     Request timed out.
+  3     5 ms     3 ms     4 ms  162.subnet125-160-9.speedy.telkom.net.id [125.160.9.162]
+  4     4 ms     4 ms     8 ms  29.subnet125-160-14.speedy.telkom.net.id [125.160.14.29]
+  5     6 ms     4 ms     7 ms  180.252.3.249
+  6   451 ms   378 ms   357 ms  180.240.190.194
+  7   371 ms   274 ms   188 ms  193.190.240.180.in-addr.arpa [180.240.190.193]
+  8    89 ms    90 ms    74 ms  150.204.240.180.in-addr.arpa [180.240.204.150]
+  9    23 ms    23 ms    26 ms  146.217.14.72.in-addr.arpa [72.14.217.146]
+ 10     *        *        *     Request timed out.
+ 11    26 ms    24 ms    25 ms  any-in-2678.1e100.net [216.239.38.120]
+
+Trace complete.
+
+11)shutdown
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>shutdown
+
+12)Systeminfo
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>Systeminfo
+
+Host Name:                 DESKTOP-QEULE7M
+OS Name:                   Microsoft Windows 10 Home
+OS Version:                10.0.18362 N/A Build 18362
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Mochahtheone@gmail.com
+Registered Organization:
+Product ID:                00326-10000-00000-AA126
+Original Install Date:     8/2/2019, 4:02:18 AM
+System Boot Time:          11/2/2019, 9:45:38 PM
+System Manufacturer:       ASUSTeK COMPUTER INC.
+System Model:              S451LN
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 69 Stepping 1 GenuineIntel ~1600 Mhz
+BIOS Version:              American Megatrends Inc. S451LN.306, 5/12/2014
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+07:00) Bangkok, Hanoi, Jakarta
+Total Physical Memory:     3,979 MB
+Available Physical Memory: 592 MB
+Virtual Memory: Max Size:  8,331 MB
+Virtual Memory: Available: 3,557 MB
+Virtual Memory: In Use:    4,774 MB
+Page File Location(s):     D:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-QEULE7M
+Hotfix(s):                 8 Hotfix(s) Installed.
+                           [01]: KB4515871
+                           [02]: KB4503308
+                           [03]: KB4508433
+                           [04]: KB4515383
+                           [05]: KB4516115
+                           [06]: KB4520390
+                           [07]: KB4521863
+                           [08]: KB4517389
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Qualcomm Atheros AR9485WB-EG Wireless Network Adapter
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.0.1
+                                 IP address(es)
+                                 [01]: 192.168.0.102
+                                 [02]: fe80::5820:e038:5775:b9c6
+                           [02]: Realtek PCIe GbE Family Controller
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+
+13)Attrib 
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>attrib +R testfile.txt
+
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>attrib
+A                    E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan\cmdline.txt
+A    R               E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan\testfile.txt
+
+14)Assoc
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>assoc .pdf
+.pdf=AcroExch.Document.DC
+
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>assoc .txt
+.txt=txtfile
+
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>assoc .dox
+File association not found for extension .dox
+
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>assoc .doc
+.doc=OpenOffice.Doc
+
+15)Driverquery
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>driverquery -v
+
+Module Name  Display Name           Description            Driver Type   Start Mode State      Status     Accept Stop Accept Pause Paged Pool(bytes) Code(bytes) BSS(bytes) Link Date              Path                                             Init(bytes)
+============ ====================== ====================== ============= ========== ========== ========== =========== ============ ================= =========== ========== ====================== ================================================ ===========
+1394ohci     1394 OHCI Compliant Ho 1394 OHCI Compliant Ho Kernel        Manual     Stopped    OK         FALSE       FALSE        4,096             229,376     0                                 C:\WINDOWS\system32\drivers\1394ohci.sys         4,096
+3ware        3ware                  3ware                  Kernel        Manual     Stopped    OK         FALSE       FALSE        0                 81,920      0          5/19/2015 5:28:03 AM   C:\WINDOWS\system32\drivers\3ware.sys            4,096
+ACPI         Microsoft ACPI Driver  Microsoft ACPI Driver  Kernel        Boot       Running    OK         TRUE        FALSE        176,128           442,368     0                                 C:\WINDOWS\system32\drivers\ACPI.sys             24,576
+AcpiDev      ACPI Devices driver    ACPI Devices driver    Kernel        Manual     Stopped    OK         FALSE       FALSE        8,192             8,192       0                                 C:\WINDOWS\system32\drivers\AcpiDev.sys          4,096
+acpiex       Microsoft ACPIEx Drive Microsoft ACPIEx Drive Kernel        Boot       Running    OK         TRUE        FALSE        40,960            65,536      0                                 C:\WINDOWS\system32\Drivers\acpiex.sys           4,096
+acpipagr     ACPI Processor Aggrega ACPI Processor Aggrega Kernel        Manual     Stopped    OK         FALSE       FALSE        4,096             4,096       0                                 C:\WINDOWS\system32\drivers\acpipagr.sys         4,096
+AcpiPmi      ACPI Power Meter Drive ACPI Power Meter Drive Kernel        Manual     Stopped    OK         FALSE       FALSE        8,192             4,096       0                                 C:\WINDOWS\system32\drivers\acpipmi.sys          4,096
+acpitime     ACPI Wake Alarm Driver ACPI Wake Alarm Driver Kernel        Manual     Stopped    OK         FALSE       FALSE        8,192             4,096       0                                 C:\WINDOWS\system32\drivers\acpitime.sys         4,096
+Acx01000     Acx01000               Acx01000               Kernel        Manual     Stopped    OK         FALSE       FALSE        217,088           77,824      0                                 C:\WINDOWS\system32\drivers\Acx01000.sys         4,096
+ADP80XX      ADP80XX                ADP80XX                Kernel        Manual     Stopped    OK         FALSE       FALSE        0                 1,101,824   0          4/10/2015 3:49:48 AM   C:\WINDOWS\system32\drivers\ADP80XX.SYS          4,096
+AFD          Ancillary Function Dri Ancillary Function Dri Kernel        System     Running    OK         TRUE        FALSE        356,352           114,688     0                                 C:\WINDOWS\system32\drivers\afd.sys              8,192
+afunix       afunix                 afunix                 Kernel        System     Running    OK         TRUE        FALSE        24,576            8,192       0                                 C:\WINDOWS\system32\drivers\afunix.sys           4,096
+ahcache      Application Compatibil Application Compatibil Kernel        System     Running    OK         TRUE        FALSE        180,224           20,480      0                                 C:\WINDOWS\system32\DRIVERS\ahcache.sys          4,096
+.
+.
+.
+.
+xboxgip      Xbox Game Input Protoc Xbox Game Input Protoc Kernel        Manual     Stopped    OK         FALSE       FALSE        12,288            258,048     0                                 C:\WINDOWS\system32\drivers\xboxgip.sys          4,096
+xhunter1     xhunter1               xhunter1               Kernel        Manual     Stopped    OK         FALSE       FALSE        0                 28,672      0          3/29/2018 11:44:55 AM  \??\C:\Windows\xhunter1.sys                      4,096
+xinputhid    XINPUT HID Filter Driv XINPUT HID Filter Driv Kernel        Manual     Stopped    OK         FALSE       FALSE        4,096             32,768      0                                 C:\WINDOWS\system32\drivers\xinputhid.sys        4,096
+YSDrv        BigNox Service         BigNox Service         Kernel        System     Running    OK         TRUE        FALSE        0                 176,128     0          10/11/2017 2:00:25 PM  \??\C:\Program Files (x86)\Bignox\BigNoxVM\RT\YS 4,096
+
+16)Tasklist
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        140 K
+Registry                        96 Services                   0     80,188 K
+smss.exe                       372 Services                   0        940 K
+csrss.exe                      588 Services                   0      4,700 K
+wininit.exe                    700 Services                   0      5,748 K
+csrss.exe                      716 Console                    1      5,364 K
+services.exe                   772 Services                   0      8,180 K
+lsass.exe                      796 Services                   0     15,060 K
+svchost.exe                    904 Services                   0      3,672 K
+fontdrvhost.exe                912 Services                   0      2,340 K
+WUDFHost.exe                   920 Services                   0     11,208 K
+svchost.exe                    976 Services                   0     27,288 K
+svchost.exe                    532 Services                   0     13,012 K
+svchost.exe                    896 Services                   0      9,400 K
+winlogon.exe                  1044 Console                    1      9,356 K
+fontdrvhost.exe               1120 Console                    1      8,808 K
+dwm.exe                       1204 Console                    1     56,828 K
+svchost.exe                   1264 Services                   0      7,536 K
+svchost.exe                   1372 Services                   0      9,500 K
+.
+.
+.
+firefox.exe                   5060 Console                    1     65,548 K
+cmd.exe                      10392 Console                    1      4,180 K
+conhost.exe                   9564 Console                    1     18,540 K
+tasklist.exe                  8544 Console                    1     12,632 K
+WmiPrvSE.exe                  3776 Services                   0      8,836 K
+
+17)Taskkill -pid 1980
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>taskkill -pid 1980
+SUCCESS: Sent termination signal to the process with PID 1980.
+
+18)time
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>time
+The current time is: 23:52:59.17
+Enter the new time:
+
+19)tree
+E:\Tugas-tugas\praxis-academy>tree
+Folder PATH listing
+Volume serial number is 1B9D-D384
+E:.
+└───kemampuan-dasar-1
+    ├───kasus
+    └───latihan
+20)sfc
+E:\Tugas-tugas\praxis-academy\kemampuan-dasar-1\latihan>sfc /Verifyonly
+
+Beginning system scan.  This process will take some time.
+
+Beginning verification phase of system scan.
+Verification 100% complete.
+
+Windows Resource Protection found integrity violations.
+For online repairs, details are included in the CBS log file located at
+windir\Logs\CBS\CBS.log. For example C:\Windows\Logs\CBS\CBS.log. For offline
+repairs, details are included in the log file provided by the /OFFLOGFILE flag.
