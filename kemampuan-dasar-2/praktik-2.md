@@ -1,7 +1,7 @@
 ## Praktikum 2
 Team Colaboration with Github
 
-##1)Adding Team Members
+##Adding Team Members
 Ada dua cara menyiapkan kolaborasi di Github:
 
 1. Organizations - Pemilik Organization bisa membuat banyak tim dengan izin berbeda untuk berbagai repositori.
