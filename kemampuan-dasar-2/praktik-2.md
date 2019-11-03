@@ -94,7 +94,7 @@ Setup Github
 ## 7. Code Review
 Compare dua kode commit
 
-![Compare](https://github.com/Hilman27/picutreRepo/blob/master/Media1/15_Compare.PNG?raw=true)
+![Compare](https://github.com/Hilman27/picutreRepo/blob/master/Media1/15_Comparing.PNG?raw=true)
 
 Pull and Compare
 
