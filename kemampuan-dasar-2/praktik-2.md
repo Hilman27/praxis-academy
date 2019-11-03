@@ -80,7 +80,7 @@ Management dengan Pivotracker
 
 Management di sisi Github
 
-![PivotalTracker](https://github.com/Hilman27/picutreRepo/blob/master/Media1/22_PivotalTracker.PNG?raw=true)
+![PivotalTracker](https://github.com/Hilman27/picutreRepo/blob/master/Media1/22_PivotalTracker?raw=true)
 
 ## 6. Continous Integration
 Setup Travis CI
