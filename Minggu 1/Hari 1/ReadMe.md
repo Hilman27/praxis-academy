@@ -88,11 +88,10 @@ Import memanggil fungsi di file Function dan Control_Flow.
 >// Importing core libraries
 import 'dart:math';
 import 'dart:io';
-
 // Importing files
 import 'function.dart';
 
-void main(){
+>void main(){
   var pownum = pow(2, 5);
   var result = fibonacci(20);
   print ("Random Number : " + pownum.toString());
@@ -116,7 +115,7 @@ Berbagai fungsi dan variable dapat disimpan dalam Classes. Classes memiliki Cons
   int get launchYear =>
       launchDate?.year; // read-only non-final property
   // Method.
-  void describe() {
+> void describe() {
     print('Spacecraft: $name');
     if (launchDate != null) {
       int years =
@@ -128,22 +127,26 @@ Berbagai fungsi dan variable dapat disimpan dalam Classes. Classes memiliki Cons
     }
   }
 }
-class Orbiter extends Spacecraft { //Extension
+
+>class Orbiter extends Spacecraft { //Extension
   num altitude;
   Orbiter(String name, DateTime launchDate, this.altitude)
       : super(name, launchDate);
 }
-class Piloted { //Mixin
+
+>class Piloted { //Mixin
   int astronauts = 1;  
   void describeCrew() {
     print('Number of astronauts: $astronauts');
   }
 }
-class PilotedCraft extends Spacecraft with Piloted{
+
+>class PilotedCraft extends Spacecraft with Piloted{
    PilotedCraft(String name, DateTime launchDate, int crew)
    :super (name,launchDate);
 }
-abstract class Describable {//Abstract
+
+> abstract class Describable {//Abstract
   void describe();
   void describeWithEmphasis() {
     print('=========');
@@ -151,7 +154,8 @@ abstract class Describable {//Abstract
     print('=========');
   }
 }
-void main(){
+
+>void main(){
   var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
   voyager.describe();
   var voyager3 = Spacecraft.unlaunched('Voyager III');
@@ -181,7 +185,6 @@ Catch memiliki fungsi sama dengan throw, tapi bedanya catch menangkap error dan 
 ![Try Catch](https://github.com/Hilman27/picutreRepo/blob/master/Media2/8_Catch.PNG?raw=true)
 
 >import 'dart:io';
-
 var name = 'Voyager I';
 var year = 1977;
 var antennaDiameter = 3.7;
@@ -191,7 +194,7 @@ var image = {
   'url': '//path/to/saturn.jpg'
 };
 
-Future main() async {
+>Future main() async {
 try {
   for (var object in flybyObjects) {
     var description = await File('$object.txt').readAsString();
@@ -209,7 +212,7 @@ Async menjalankan kode di dalamnya diluar loop utama, sehingga jika ada yang ter
 
 >import 'dart:io';
 
-Future<void> createDescriptions(Iterable<String> objects) async {
+>Future<void> createDescriptions(Iterable<String> objects) async {
   for (var object in objects) {
     try {
       var file = File('$object.txt');
@@ -226,7 +229,8 @@ Future<void> createDescriptions(Iterable<String> objects) async {
     }
   }
 }
-void main(){
+
+>void main(){
 var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
   createDescriptions(flybyObjects);
 }
