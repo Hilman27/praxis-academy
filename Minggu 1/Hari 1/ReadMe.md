@@ -13,34 +13,34 @@ Program utama dart selalu memiliki fungsi main. Dalam program ini, fungsi main h
 # 2. Variable
 Variable dalam Dart dapat langsung dideklarasikan dengan var.
 
->var name = 'Voyager I';
->var year = 1977;
->var antennaDiameter = 3.7;
->var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
->var image = {
->  'tags': ['saturn'],
->  'url': '//path/to/saturn.jpg'
->};
+> var name = 'Voyager I';
+var year = 1977;
+var antennaDiameter = 3.7;
+var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+var image = {
+  'tags': ['saturn'],
+  'url': '//path/to/saturn.jpg'
+};
 
->void main() {
->  print('This is name var : ' + name);
->  print('This is year var : ' + year.toString());
->  print('This is antennaDiameter var : ' + antennaDiameter.toString());
->}
+> void main() {
+  print('This is name var : ' + name);
+  print('This is year var : ' + year.toString());
+  print('This is antennaDiameter var : ' + antennaDiameter.toString());
+}
 
 ![Variable](https://github.com/Hilman27/picutreRepo/blob/master/Media2/2_Variable.PNG?raw=true)
 
 # 3. Control_Flow
 Penggunaan if, else dan For dapat mengubah jalur eksekusi perintah.
 
->void main(){
+> void main(){
   var year = 2010;
     if (year >= 2001) {
     print('21st century');
   } else if (year >= 1901) {
     print('20th century');
   }
-  var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+> var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
   for (var object in flybyObjects) {
     print(object);
   }
