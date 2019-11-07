@@ -18,6 +18,7 @@ atau
 >var list = [1,1,5,4,5];
 
 Kode :
+
 '''dart
 >print("Isi Variable List adalah : $list");
 list.add(5);
