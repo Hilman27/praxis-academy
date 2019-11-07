@@ -126,7 +126,8 @@ Hasil :
 HashSets : {34, 67, 75, 100, 54}
 ```
 
-##Generic
+## Generic
+
 Generic adalah cara untuk melimitasi jenis variable yang dapat diinput ke dalam method dan Collection. Namun Generic juga dapat digunakan untuk mengatasi berbagai jenis variable input.
 
 Contoh Penggunaan Generic
