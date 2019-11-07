@@ -20,14 +20,14 @@ atau
 Kode :
 
 '''dart
->print("Isi Variable List adalah : $list");
+print("Isi Variable List adalah : $list");
 list.add(5);
 list.add("Kucing");
 list.add("Nomer.7");
 list.add(false);
 print("Sekarang isinya adalah : $list");
 
->var list2 = [1,2,3,...list];
+var list2 = [1,2,3,...list];
   print("Sekarang dikopi ke list2 : $list2");
   list2.removeAt(5);
   print("Hilangkan Index no. 5 : $list2");
