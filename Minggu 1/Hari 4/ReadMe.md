@@ -19,7 +19,7 @@ atau
 
 Kode :
 
-'''dart
+```dart
 print("Isi Variable List adalah : $list");
 list.add(5);
 list.add("Kucing");
@@ -36,7 +36,7 @@ var list2 = [1,2,3,...list];
   list2.removeRange(3, list2.length);
   print("Kemudian dihapus : $list2");
   print("");
-'''
+```
 Hasil 
 
 >Isi Variable List adalah : [1, 1, 5, 4, 5]
