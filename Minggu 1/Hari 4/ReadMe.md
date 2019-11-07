@@ -15,10 +15,10 @@ List adalah sekelompok variable yang dikumpulkan dalam satu collection. Secara d
 
 atau
 
->var list =  list = [1,1,5,4,5];
+>var list = [1,1,5,4,5];
 
 Kode :
-
+'''darts
 >print("Isi Variable List adalah : $list");
 list.add(5);
 list.add("Kucing");
@@ -35,7 +35,7 @@ print("Sekarang isinya adalah : $list");
   list2.removeRange(3, list2.length);
   print("Kemudian dihapus : $list2");
   print("");
-
+'''
 Hasil 
 
 >Isi Variable List adalah : [1, 1, 5, 4, 5]
