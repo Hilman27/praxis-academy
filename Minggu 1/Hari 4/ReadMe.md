@@ -20,11 +20,11 @@ atau
 Kode :
 
 >print("Isi Variable List adalah : $list");
-  list.add(5);
-  list.add("Kucing");
-  list.add("Nomer.7");
-  list.add(false);
-  print("Sekarang isinya adalah : $list");
+list.add(5);
+list.add("Kucing");
+list.add("Nomer.7");
+list.add(false);
+print("Sekarang isinya adalah : $list");
 
 >var list2 = [1,2,3,...list];
   print("Sekarang dikopi ke list2 : $list2");
