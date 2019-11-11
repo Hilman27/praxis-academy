@@ -13,7 +13,7 @@ Program utama dart selalu memiliki fungsi main. Dalam program ini, fungsi main h
 # 2. Variable
 Variable dalam Dart dapat langsung dideklarasikan dengan var.
 
-> var name = 'Voyager I';
+```var name = 'Voyager I';
 var year = 1977;
 var antennaDiameter = 3.7;
 var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
@@ -22,18 +22,19 @@ var image = {
   'url': '//path/to/saturn.jpg'
 };
 
-> void main() {
+  void main() {
   print('This is name var : ' + name);
   print('This is year var : ' + year.toString());
   print('This is antennaDiameter var : ' + antennaDiameter.toString());
 }
+```
 
 ![Variable](https://github.com/Hilman27/picutreRepo/blob/master/Media2/2_Variable.PNG?raw=true)
 
 # 3. Control_Flow
 Penggunaan if, else dan For dapat mengubah jalur eksekusi perintah.
 
-> void main(){
+``` void main(){
   var year = 2010;
     if (year >= 2001) {
     print('21st century');
@@ -51,13 +52,14 @@ Penggunaan if, else dan For dapat mengubah jalur eksekusi perintah.
     year += 1;
   }
 }
+```
 
 ![Variable](https://github.com/Hilman27/picutreRepo/blob/master/Media2/3_ControlFlow.PNG?raw=true)
 
 # 4. Function
 Dengan membuat sebuah function, kode dalam function dapat dipanggil berkali-kali hanya dengan memanggil function tersebut.
 
->int fibonacci(int n) {
+```int fibonacci(int n) {
   if (n == 0 || n == 1) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
@@ -69,23 +71,26 @@ void main(){
   print("Bilangan fibonacci ke-"+ num.toString() +" adalah "+result.toString());
   flybyObjects.where((name) => name.contains('turn')).forEach(print);
 }
+```
 
 # 5. Comment
 Comment membuat tulisan yang dirangkumnya tidak tampak di compiler. Bisa digunakan untuk backup kode atau menonaktifkan perintah.
 
->//Anything written with // are not readed.
+```//Anything written with // are not readed.
 /*
   This one works this way as well
   void main(){
     print("Hello!");
   }
 */
+```
 
 # 6. Import
 Penggunaan import dapat digunakan untuk memanggil fungsi dalam file atau library lain.
 Import memanggil fungsi di file Function dan Control_Flow.
 
->// Importing core libraries
+```
+// Importing core libraries
 import 'dart:math';
 import 'dart:io';
 // Importing files
@@ -97,13 +102,15 @@ import 'function.dart';
   print ("Random Number : " + pownum.toString());
   print ("Fibonacci : " + result.toString());
 }
+```
 
 ![Import](https://github.com/Hilman27/picutreRepo/blob/master/Media2/5_Imports.PNG?raw=true)
 
 # 7. Classes
 Berbagai fungsi dan variable dapat disimpan dalam Classes. Classes memiliki Constructor yang dapat digunakan untuk mengisi nilai variable dalam class ketika dibuat. Dalam file ini terdapat class abstrak, inheritance dan Mixin. 
 
->class Spacecraft extends Describable{ //Class
+```
+ class Spacecraft extends Describable{ //Class
   String name;
   DateTime launchDate;
   // Constructor, with syntactic sugar for assignment to members.
@@ -173,6 +180,7 @@ Berbagai fungsi dan variable dapat disimpan dalam Classes. Classes memiliki Cons
   apolo7.describeCrew();
   apolo7.describeWithEmphasis();
 }
+```
 
 
 ![Classes](https://github.com/Hilman27/picutreRepo/blob/master/Media2/6_Classes.PNG?raw=true)
@@ -184,7 +192,8 @@ Try adalah perintah ujicoba kode di dalamnya. Apabila terdapat masalah, Throw ak
 Catch memiliki fungsi sama dengan throw, tapi bedanya catch menangkap error dan menulisnya,tapi masih menjalankan perintah selanjutnya.
 ![Try Catch](https://github.com/Hilman27/picutreRepo/blob/master/Media2/8_Catch.PNG?raw=true)
 
->import 'dart:io';
+```
+import 'dart:io';
 var name = 'Voyager I';
 var year = 1977;
 var antennaDiameter = 3.7;
@@ -206,13 +215,15 @@ try {
   flybyObjects.clear();
 }  
 }
+```
 
 # 9. Async
 Async menjalankan kode di dalamnya diluar loop utama, sehingga jika ada yang terjadi dengan loop utama, loop async masih tetap jalan.
 
->import 'dart:io';
+```
+import 'dart:io';
 
->Future<void> createDescriptions(Iterable<String> objects) async {
+Future<void> createDescriptions(Iterable<String> objects) async {
   for (var object in objects) {
     try {
       var file = File('$object.txt');
@@ -234,5 +245,6 @@ Async menjalankan kode di dalamnya diluar loop utama, sehingga jika ada yang ter
 var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
   createDescriptions(flybyObjects);
 }
+```
 
 ![Async](https://github.com/Hilman27/picutreRepo/blob/master/Media2/9_Async.PNG?raw=true)
