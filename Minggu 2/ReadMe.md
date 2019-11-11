@@ -33,11 +33,11 @@ flutter doctor -v
 
 Apabila Flutter sudah siap digunakan, gunakan "flutter: newproject" untuk membuat project flutter baru. Ditahap ini dibutuhkan emulator (atau Smartphone Android) untuk menguji coba program. Apabila project terbuat dengan lancar, jika dijalankan di emulator akan menghasilkan applikasi seperti berikut :
 
-![Project Flutter Awal](1_TestRun.PNG)
+![Project Flutter Awal](https://github.com/Hilman27/picutreRepo/blob/master/Media3/1_TestRun.PNG?raw=true)
 
 Project dapat diedit di tengah emulasi dan langsung berpengaruh di emulasi apabila menggunakan hot reload (Icon petir kuning).
 
-![Hot](2_Bar.PNG)
+![Hot](https://github.com/Hilman27/picutreRepo/blob/master/Media3/2_Bar.PNG?raw=true)
 
 # 2) Class Widget
 Framework Flutter menggunakan dart sebagai bahasa pemerograman dan mempunyai tata pemerograman deskriptif, berbeda dengan bahasa pemerograman seperti java yang imperatif. Jika pemerograman imperatif disusun atas class yang runtut atas ke bawah, pemerograman deskriptif adalah pemerograman yang terdiri atas template-template yang disebut widget.
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 Kode di atas akan menghasilkan program berikut di emulasi : 
-![Hello World!](4_HelloWorld.PNG)
+![Hello World!](https://github.com/Hilman27/picutreRepo/blob/master/Media3/4_HelloWorld.PNG?raw=true)
 
 # 3) Import
 Flutter dapat mengimport fungsi dari package luar. Package harus tertuliskan di pubspec.yaml di bagian dependencies. Berikut contoh dependencies :
@@ -96,7 +96,7 @@ home: Scaffold(
         ),
 ```
 Berikut adalah hasil applikasi perubahan di atas. Hello World diganti dengan kata inggris acak.
-![Hasil Import](5_wordImports.PNG)
+![Hasil Import](https://github.com/Hilman27/picutreRepo/blob/master/Media3/5_wordImports.PNG?raw=true)
 
 # 3) Stateful Widget
 Widget adalah sebuah class, maka bisa ditambahkan berbagai method dan bahkan class lain ke dalamnya. Dalam percobaan ini pemanggilan di atas diubah cara panggilnya. Dua class dibuat, RandomWords dan RandomWordsState. RandomWords memanggil RandomWordsState, sedangkan RandomWordsState berisikan pemanggilan  inisialisasi class WordPair dari package english_words. RandomWords kemudian dipanggil dari text di dalam body home.
@@ -169,7 +169,7 @@ Widget _buildRow(WordPair pair) {
   );
  ```
  Berikut adalah hasil applikasi.
- ![Hasil penambahan List dan Icon](8_Interactivity.PNG)
+ ![Hasil penambahan List dan Icon](https://github.com/Hilman27/picutreRepo/blob/master/Media3/8_Interactivity.PNG?raw=true)
  
 # 5) Navigation
 Applikasi Flutter dapat melompat dari satu halaman app ke halaman lain menggunakan navigation. Fungsi di bawah ini adalah method _pushSaved. Metode ini menggunakan Navigator.push untuk membuat halaman app baru.
@@ -209,12 +209,12 @@ void _pushSaved(){
 ```
 
 Laman baru yang dibuat
-![Navigasi](9_Navigation.PNG)
+![Navigasi](https://github.com/Hilman27/picutreRepo/blob/master/Media3/9_Navigation.PNG?raw=true)
 
 # 6) Theme
 
 Skema warna dari class Flutter dapat diganti menggunakan "theme : Colors". 
-![Pergantian tema warna](10_ThemeEdit.PNG)
+![Pergantian tema warna](https://github.com/Hilman27/picutreRepo/blob/master/Media3/10_ThemeEdit.PNG?raw=true)
 ```
 return MaterialApp(
       title: 'Startup Name Generator',
