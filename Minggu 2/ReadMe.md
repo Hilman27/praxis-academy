@@ -141,7 +141,8 @@ Widget adalah template, sehingga dapat di duplikasi berkali-kali dengan detail b
         }
         return _buildRow(_suggestions[index]);
       });
-}```
+}
+```
 
 Class ini mengatur jumlah list yang ditampilkan, tapi isi dari list tersebut diatur dalam _buildRow. Dalam class ini terdapat struktur yang sedikit berbeda dengan project Hello World. Tittle masih ada, tapi body tidak ada. Tittle di sini malah memiliki pemanggilan method dari package yang diimport, kemudian ditambah trailing berisi icon dan tambahan interaksi tap yang akan merespon jika disentuh.
 
