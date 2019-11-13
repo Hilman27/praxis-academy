@@ -5,4 +5,4 @@ Kasus 3
 Applikasi dibuat dengan fokus tombol di tengah layar dan tulisan di atasnya. Tulisan akan berubah tergantung berapa kali pengguna menekan tombol. Kalimat yang keluar adalah yang ada di dalam list strings, yakni "Flutter","Is" dan "Awesome". Tulisan dapat berganti karena fungsi OnPress yang diset untuk dieksekusi ketika tombol ditekan. Dalam fungsi OnPress terdapat counter yang akan menghitung jumlah klik buton dan reset setelah mencapai akhir list.
 
 Kasus 4
-Applikasi dibuat dengan tombol Home Page bericon hati yang akan membawa ke page berikutnya ketika icon ditekan. Perpindahan dapat terjadi karena penggunaan navigator untuk membuat page berikutnya.
+Applikasi dibuat dengan tombol Home Page bericon hati yang akan membawa ke page berikutnya ketika icon ditekan. Perpindahan dapat terjadi karena penggunaan navigator untuk membuat page berikutnya. Versi Stateful memakai sedikit workaround. Setelah page dibuat, page disimpan di app route, sehingga bisa dipanggil dengan memakai Navigator.pushNamed
