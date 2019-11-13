@@ -53,6 +53,7 @@ Argument dapat dipassing dari method ke method lain dengan membuat class ekstrak
 
 ## 4) Return Data
 Data dapat dikirim kembali dengan metode async yang menunggu jawaban. jawaban dapat dikirim kembali dengan pop dan memasukan jawaban dalam argumen pop.
+
 ![Navigation Push](https://github.com/Hilman27/picutreRepo/blob/master/Media5/6_returnData_1.PNG?raw=true)
 ![Navigation Pop](https://github.com/Hilman27/picutreRepo/blob/master/Media5/6_returnData_2.PNG?raw=true)
 ![Navigation Pop](https://github.com/Hilman27/picutreRepo/blob/master/Media5/6_returnData_3.PNG?raw=true)
@@ -65,7 +66,7 @@ Passing data kali ini menggunakan constructor pada builder data dipassing melalu
 ### Kasus
 Dalam kasus ini MyApp yang dijalankan pertama kali memiliki dua route. route inisial yang mengarah ke homepage dan route yang mengarah ke signup Page. dikarenakan perlu perintah flutter create --sample=widgets.Navigator.1 mysample untuk dapat masuk ke /signup, tapi tidak bisa diakses melalui cara debug biasa, saya membuat sebuah tombol di homepage yang melakukan navigation push ke /signup.
 
-10_Kasus_1.PNG
+![SplashScreen diganti](https://github.com/Hilman27/picutreRepo/blob/master/Media5/10_Kasus_1.PNG?raw=true)
 
 Begitu masuk ke /signup, route akan membawa ke CollectPersonalInfoPage, kemudian ChooseCredentialPage. Ini dapat terjadi karena penggunaan switch case di SignupPage. Sebuah builder akan terbuat setiap menekan tombol di CollectPersonalInfoPage dan ChooseCredentialPage, yang akan membawa kembali ke signup page jika kondisi terpenuhi. Setelah menekan tombol ChooseCredentialPage, onSignupComplete akan terinvoke, membawa kembali ke builder di SignupPage yang kemudian akan eksekusinavigation.pop, mengirim layar kembali ke halaman home.
 
