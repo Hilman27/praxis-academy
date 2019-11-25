@@ -43,4 +43,4 @@ private int getBatteryLevel() {
 Perlu dicatat bahwa untuk menjalankan kode di Windows diperlukan pengaturan enviroment variable path java.
 Berikut adalah screenshot applikasi :
 
-![SplashScreen diganti](https://github.com/Hilman27/picutreRepo/blob/master/Media7/7_Java.PNG.raw=true?raw=true)
+![SplashScreen diganti](https://github.com/Hilman27/picutreRepo/blob/master/Media7/7_Java.PNG?raw=true)
