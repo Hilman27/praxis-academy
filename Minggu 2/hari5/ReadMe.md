@@ -1,4 +1,4 @@
-### Hari 5 : Silver and Gesture
+### Hari 4 : Silver and Gesture
 
 ### Kasus
 Dalam kasus ini, applikasi di latihan perlu ditambahkan GestureDetection supaya dapat melompat dari satu header ke header lain.
